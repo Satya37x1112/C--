@@ -1,0 +1,18 @@
+from gensim.summarization import summarize
+
+def summarize_paragraph(paragraph):
+    try:
+        # Generate summary
+        summary = summarize(paragraph, ratio=0.3)  # Adjust ratio for summary length
+        return summary
+    except ValueError:
+        return "The paragraph is too short to summarize!"
+
+# Example usage
+paragraph = """
+Your detailed paragraph goes here. The script will generate a concise summary based on the content.
+"""
+
+summary = summarize_paragraph(paragraph)
+print("Summary:")
+print(summary)
