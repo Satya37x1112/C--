@@ -8,7 +8,7 @@ data = {
     'temperature': [70, 75, 80, 72, 85, 78, 90, 82],
     'vibration': [0.5, 0.6, 0.8, 0.55, 0.9, 0.7, 1.2, 0.85],
     'pressure': [100, 105, 110, 102, 115, 108, 120, 112],
-    'failure': [0, 0, 1, 0, 1, 0, 1, 0] # 0 for no failure, 1 for failure
+    'failure': [0, 0, 0, 0, 0, 0, 1, 0] # 0 for no failure, 1 for failure
 }
 df = pd.DataFrame(data)
 
